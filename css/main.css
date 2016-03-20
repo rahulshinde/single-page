@@ -70,6 +70,10 @@ table {
 	background-color: white;
 }
 
+.mobile {
+	display: none;
+}
+
 /* 	======================
 		TYPOGRAPHY
 	======================*/
@@ -87,10 +91,6 @@ a {
 	padding: 5px;
 }
 
-h1 {
-	font-size: 17px;
-}
-
 h2, a {
 	font-family: 'Halant', serif;
 	font-weight: 400;
@@ -99,9 +99,9 @@ h2, a {
 }
 
 h1 {
-	font-family: 'Halant', serif;
-	font-weight: 600;
-	font-size: 18px;
+	font-family: 'Rubik', serif;
+	font-weight: 300;
+	font-size: 14px;
 }
 
 .header h2 {
@@ -121,6 +121,68 @@ h2.about,
 	font-weight: 300;
 	font-style: italic;
 	font-size: 16px;
+}
+
+/* 	======================
+		ABOUT
+	======================*/
+
+#name,
+#question,
+#top {
+	top: 10px;
+}	
+
+#name {
+	position: fixed;
+	left: 10px;
+	z-index: 100;
+}
+
+#question {
+	position: fixed;
+	right: 10px;
+	z-index: 100;
+}
+
+#top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid red;
+	background-color: white;
+	z-index: 50;
+}
+
+#about-desc {
+	position: fixed;
+	top:100px;
+	width: 90%;
+	left: 5%;
+	text-align: center;
+
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-size: 36px; 
+	line-height: 50px;
+	color: red;
+}
+
+#about-desc a {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 36px; 
+	line-height: 50px;
+	color: red;
+}
+
+.work-links {
+	/*display: inline-block;*/
 }
 
 
