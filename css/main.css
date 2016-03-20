@@ -127,22 +127,26 @@ h2.about,
 		ABOUT
 	======================*/
 
-#name,
-#question,
-#top {
-	top: 10px;
-}	
 
 #name {
 	position: fixed;
-	left: 10px;
+	top: 10px;
+	left: 20px;
 	z-index: 100;
 }
 
 #question {
 	position: fixed;
+	top: 0px;
 	right: 10px;
+	padding:10px;
 	z-index: 100;
+}
+
+#question:hover,
+#top:hover {
+	color: red;
+	cursor: pointer;
 }
 
 #top {
@@ -156,6 +160,7 @@ h2.about,
 	border-bottom: 1px solid red;
 	background-color: white;
 	z-index: 50;
+	display: none;
 }
 
 #about-desc {
@@ -170,6 +175,7 @@ h2.about,
 	font-size: 36px; 
 	line-height: 50px;
 	color: red;
+	display: none;
 }
 
 #about-desc a {
