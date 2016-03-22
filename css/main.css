@@ -64,18 +64,9 @@ table {
 	/*outline: 1px solid rgb(0,0,255);*/
 }
 
-body {
-	background-image: url("../img/watermark-01.png");
-	background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    /*background-size: 100%;*/
-}
-
 .container {
 	height: 100%;
 	width: 100%;
-	background-color: white;
 }
 
 .mobile {
@@ -107,10 +98,13 @@ h2{
 	color: rgba(0,0,0,0.4);
 }
 
-h1 {
+h1,
+#archive:link,
+#archive:visited {
 	font-family: 'Rubik', serif;
 	font-weight: 300;
 	font-size: 14px;
+	text-decoration: none;
 }
 
 .header h2 {
@@ -124,12 +118,12 @@ h2.date {
 }
 
 h2.description,
-h2.about,
-.about a {
+h2.about {
 	font-family: 'Rubik', sans-serif;
 	font-weight: 300;
 	font-style: italic;
 	font-size: 16px;
+	color: black;
 }
 
 /* 	======================
@@ -158,8 +152,8 @@ h2.about,
 }
 
 #question:hover,
-#top:hover,
-#question-close:hover {
+#question-close:hover,
+#archive:hover {
 	color: red;
 	cursor: pointer;
 }
@@ -173,9 +167,8 @@ h2.about,
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid red;
-	background-color: white;
+	/*background-color: white;*/
 	z-index: 50;
-	display: none;
 }
 
 #about-desc {
@@ -191,6 +184,7 @@ h2.about,
 	line-height: 50px;
 	color: red;
 	display: none;
+	z-index: 300;
 }
 
 #about-desc a {
@@ -208,31 +202,208 @@ h2.about,
 
 
 /* 	======================
-		NAV
+		THREE COLUMN
 	======================*/
 
-.nav {
-	float: left;
-	margin-top: 100px;
-	width: 80%;
-	margin-left: 10%;
-	height: 800px;
-}
-
-/*  =======================
-    MEDIA QUERIES
-    ======================= */
-
-@media screen and (max-width: 1111px) { 
-
-
-}
-
-@media screen and (max-width: 630px) { 
-
+.three-column {
+	position: fixed;
+	top: 34px;
+	bottom: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-between;
+	height: 100%;
+	width: 100%;
+	background-image: url("../img/watermark-01.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
 }
 
-@media screen and (max-width: 520px) { 
+/* 	===========================
+		TYPOGRAPHY
+	=========================== */
+
+.p1,
+.p2,
+.p3 {
+	font-family: 'Halant', serif;
+	font-size: 36px;
+	text-align: center;
+	background-color: rgba(255,255,255,0);
+
+}
+
+
+.id1-content p {
+	width: 95%;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	font-size: 12px;
+	text-align: left;
+}
+
+
+
+/* 	===========================
+		GENERAL
+	=========================== */
+
+.p1,
+.p2,
+.p3 {
+	width: 33%;
+	overflow-y: scroll;
+
+}
+
+.p1 h1,
+.p2 h1,
+.p3 h1 {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	width: 33%;
+	font-family: 'Halant', serif;
+	font-size: 20px;
+	color: rgba(0,0,0,1);
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	z-index: 20;
+
+}
+
+.p1,
+.p2{
+
+	border-right:1px solid red;
+	
+}
+
+.id1-content {
+	position: relative;
+	top: 50px;
+	bottom: 0;
+	width: 100%;
+	overflow-y:hidden;
+}
+
+.id1-content img {
+	width: 100%;
+}
+
+/* 	=============================
+		PHASE LABELS / IMAGES
+	============================= */
+
+p.label-top1 {
+	margin-top: 50px;
+}
+
+p.label-top2 {
+	margin-top: 50px;
+}
+
+p.label-top3 {
+	margin-top: 50px;
+}
+
+p.other-label {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+img.img-top2 {
+	margin-top: 10px;
+}
+
+img.img-top3 {
+	margin-top: 15px;
+}
+
+img.img-bottom1 {
+	margin-bottom: 9px;
+}
+
+img.img-bottom2 {
+	margin-bottom: 3px;
+}
+
+/* 	=============================
+		MEDIA QUERIES
+	============================= */
+
+@media screen and (max-width: 680px) {
+	.container {
+		width: 100%;
+	}
+
+	.content-left {
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+	.id1-content {
+		position: relative;
+		top: 50px;
+		width: 100%;
+		height: auto;
+		overflow-y:hidden;
+	}
+
+	.p1 h1,
+	.p2 h1,
+	.p3 h1 {
+		background-color: rgba(0,0,0,0);
+		z-index: 10;
+
+	}
+
+	.p2 {
+		overflow: hidden;
+	}
+
+	img.img-bottom1 {
+		margin-bottom: 0px;
+	}
+	
+	img.img-bottom2 {
+		margin-bottom: 60px;
+	}
+
+}
+
+@media screen and (max-width: 555px) {
+
+	.p1,
+	.p2,
+	.p3 {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		border-right:none;
+
+	}
+
+	.p2,
+	.p3 {
+		/*margin-top: 100px;*/
+	}
+
+	.p1 h1,
+	.p2 h1,
+	.p3 h1 {
+		width: 100%;
+		z-index: 10;
+	
+	}
+
+	img.img-bottom1 {
+		margin-bottom: 65px;
+	}
+	
+	img.img-bottom3 {
+		margin-bottom: 45px;
+	}
 
 }
