@@ -147,6 +147,8 @@ h2.about {
 }
 
 p.section-heading {
+	display: block;
+	margin-top: 20px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -291,9 +293,40 @@ p.section-heading {
 		IMAGES
 	============================= */
 
+.three-column ul {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 6%;
+}
+
+.img-right {
+	padding-right: 10%;
+}
+
+.last1 {
+	padding-right: 80%;
+}
+
+.three-column li {
+	width: 30%;
+	list-style:none;
+	float:left;
+	display:inline;
+}
+
 .three-column img {
-	margin-top: 20px;
-	width: 60%;
+	border:none;
+	width: 90%;
+}
+
+#preview {
+	position:absolute;
+	border:1px solid red;
+	background:red;
+	padding:5px;
+	display:none;
+	font-family: monospace;
+	color:#fff;
 }
 
 /* 	=============================
