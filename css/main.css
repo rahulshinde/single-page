@@ -341,9 +341,10 @@ img.full {
 	position:absolute;
 	border:1px solid red;
 	background:red;
-	padding:5px;
+	padding:3px;
 	display:none;
 	font-family: monospace;
+	letter-spacing: 5px;
 	color:#fff;
 }
 
