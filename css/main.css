@@ -64,6 +64,13 @@ table {
 	/*outline: 1px solid rgb(0,0,255);*/
 }
 
+body {
+	background-image: url("../img/watermark-01.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
@@ -223,6 +230,7 @@ p>a:visited {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: white;
 	border-bottom: 1px solid red;
 	/*background-color: white;*/
 	z-index: 50;
@@ -272,10 +280,6 @@ p>a:visited {
 	justify-content:space-between;
 	height: 100%;
 	width: 100%;
-	background-image: url("../img/watermark-01.png");
-	background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 
 }
 
@@ -291,13 +295,12 @@ p>a:visited {
 .p2 h1,
 .p3 h1 {
 	padding-top: 30px;
-	padding-bottom: 20px;
-	width: 33%;
+	margin-bottom: -40px;
+	width: 100%;
 	font-family: 'Halant', serif;
 	font-size: 20px;
 	color: rgba(0,0,0,1);
 	background-color: rgba(255,255,255,0);
-	position: absolute;
 	z-index: 20;
 
 }
