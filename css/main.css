@@ -150,11 +150,15 @@ h2.about {
 
 p.section-heading {
 	display: block;
-	margin-top: 20px;
+	margin-top: 70px;
 	font-family: 'Rubik', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	color: red;
+}
+
+p.head-pad {
+	margin-top: 600px;
 }
 
 p.sub-head {
@@ -173,6 +177,10 @@ p>a:visited {
 	padding: 0;
 	color: red;
 
+}
+
+.strike {
+	text-decoration: line-through;
 }
 
 /* 	======================
@@ -327,6 +335,13 @@ p>a:visited {
 .last1 {
 	padding-right: 80%;
 }
+.last2 {
+	padding-right:35%;
+}
+
+.content-b {
+	margin-bottom: 90px; 
+}
 
 .three-column li {
 	width: 30%;
@@ -355,6 +370,7 @@ img.full {
 	font-family: monospace;
 	letter-spacing: 5px;
 	color:#fff;
+	z-index: 1000;
 }
 
 #tooltip{
@@ -367,6 +383,7 @@ img.full {
 	line-height: 20px;
 	box-shadow: 3px 3px 5px rgba(0,0,0,0.7);
 	display:none;
+	z-index: 1000;
 }
 
 /* 	=============================
